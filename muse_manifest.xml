@@ -1,0 +1,17 @@
+<manifest alg="2" build="2015.1.0.342" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="officeUpdateHelper.com" resolutions="1x" timestamp="1457014324844">
+  <folder name="css">
+    <file name="site_global.css" crc="131700929"/>
+    <file name="index.css" crc="3760105103" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="409338010" ref="index"/>
+    <file name="museutils.js" crc="4190794036" ref="index"/>
+    <file name="whatinput.js" crc="84559013" ref="index"/>
+    <file name="jquery.watch.js" crc="349565855" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="white_logo_office.png" crc="4145419283" seo="true" ref="index"/>
+    <file name="macbookoffice.png" crc="4277850552" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3820320542" seo="true" mt="1457014103493" redirect="true"/>
+</manifest>
