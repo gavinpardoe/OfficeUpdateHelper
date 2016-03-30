@@ -1,7 +1,10 @@
 # OfficeUpdateHelper
 **Office update delivery helper, with user interaction. Desgined for use with Casper Suite.**
 
+**Release Version Here: https://github.com/gavinpardoe/OfficeUpdateHelper/releases**
+
 ![alt tag](https://raw.githubusercontent.com/gavinpardoe/OfficeUpdateHelper/master/officeUpdateHelper.png)
+
 
 ##Problem##
 
