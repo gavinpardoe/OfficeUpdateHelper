@@ -27,12 +27,13 @@ This App was created to get around the “can’t push update pkg’s to users w
 **Casper Policy’s & Smart Groups need to be configured as per below:**
 
 1.      The App first needs to be deployed to machines,  somewhere like “/Library/Application\ Support/JAMF/” so that it can be called when needed (much like the JAMF Helper)
-2.      A Smart Group to scope this to. I would use something like “is not office version xxx” (xxx = the version office will be once updated) or “packages install by Casper are not office update xxx” that way re-occurring policies can used and machines will drop out of scope once deployed.
-3.      A policy to call the application. Very simple policy that run’s either a command or script to launch the App. The App needs to be run as root so that it can run the sudo JAMF policy –event command.  Use “sudo -b /Library/Application\ Support/JAMF/officeUpdateHelper.app/Contents/MacOS/officeUpdateHelper” the” –b” is important, it runs the App as a background process and the path can be changed based on the location of the App. Set this policy to recurring check in with either ongoing or once per day occurrence. So that if the user clicks the defer button the App will re-run at a later date.
+2.      A Smart Group to scope this too. I would use something like “is not office version xxx” (xxx = the version office will be once updated) or “packages install by Casper are not office update xxx” that way re-occurring policies can used and machines will drop out of scope once deployed.
+3.      A policy to call the application. Very simple policy that run’s either a command or script to launch the App. The App needs to be run as root so that it can run the sudo JAMF policy –event command.  Use “sudo -b /Library/Application\ Support/JAMF/officeUpdateHelper.app/Contents/MacOS/officeUpdateHelper” the” –b” is important, it runs the App as a background process, the path can be changed based on the location of the App. Set this policy to recurring check in with either ongoing or once per day occurrence. So that if the user clicks the defer button the App will re-run at a later date.
 4.      Then the policy to install the update(s). add the relevant office updates to the policy, make sure update inventory is also checked. The trigger should be “Customer Trigger” and use the trigger name “officeUpdates”. Finally add a Files and Processes payload to the policy and enter “officeUpdateHelper” to the search for process box and tick the kill this process if found check box below. This will close the App once the updates have been installed. For future updates just clone and rename this policy and change the update packages within.
  
 **Getting Office updates:**
 
 On JAMF Nation there is always a link to the latest updates : https://jamfnation.jamfsoftware.com/viewProduct.html?id=383&view=info
+
 This site also lists all history for updates and links to the MS KB page with download links: http://macadmins.software/
 
