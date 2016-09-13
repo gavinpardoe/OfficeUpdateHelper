@@ -16,7 +16,7 @@ Alternatively allowing users to apply updates themselves is often unreliable, es
 
 This App was created to get around the “can’t push update pkg’s to users while office apps are running”, “can’t force quite office app’s due to loss of work” and the “users don’t run the office auto updater” issues.
 
-**It does the flowwing:**
+**It does the following:**
 
 1.      Display’s a small window on the right hand side of the screen, letting you know that updates are needed. (see screen shot)
 2.      Will check if Outlook, Word, Excel, PowerPoint or OneNote are running. If they are the install button is disabled and a message displayed informing you that all office apps need to be closed.
