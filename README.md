@@ -6,13 +6,13 @@
 ![alt tag](https://raw.githubusercontent.com/gavinpardoe/OfficeUpdateHelper/master/officeUpdateHelper.png)
 
 
-## Problem##
+## Problem
 
 Pushing/ remotely installing Office updates can be difficult. This is due to not being able install update packages while Office applications are running. Force quitting applications gives a poor user experience and may result in the loss of work.  
 Alternatively allowing users to apply updates themselves is often unreliable, especially with regards to security updates.
 
 
-## Solution##
+## Solution
 
 This App was created to get around the “can’t push update pkg’s to users while office apps are running”, “can’t force quite office app’s due to loss of work” and the “users don’t run the office auto updater” issues.
 
